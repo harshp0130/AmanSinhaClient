@@ -11,20 +11,16 @@ const professor = {
   title: 'Principle Investigator',
   department: '',
   image: professorImg,
-  email: 'jkim@skku.edu',
-  website: '',
+  email: '',
+  // website: '',
   bio: 'Aman Sinha is an Assistant Professor of the Institute of Integrated Circuit Design (IICD) at National Sun Yat-Sen University (NSYSU), Taiwan.',
   bio2: 'His research interests include diverse aspects of Hardware-Software System Co-Design, including Algorithmic Optimizations, Memory-Centric Computing, Reconfigurable Systems, RISC-V SoCs, Domain-Specific Accelerators, and Distributed Computing. His current research focuses on accelerating key bioinformatics and drug discovery applications to enable affordable and real-time Personalized Medicine.',
-  interests: ['Computer Architecture', 'Memory Systems', 'ML Accelerators'],
+  // interests: ['Computer Architecture', 'Memory Systems', 'ML Accelerators'],
 };
 
 
 
-const alumni = [
-  { name: 'Jihoon Kang', degree: 'Ph.D. 2023', position: 'Researcher at Samsung Electronics' },
-  { name: 'Eunji Song', degree: 'M.S. 2023', position: 'Engineer at NVIDIA' },
-  { name: 'Taewon Shin', degree: 'M.S. 2022', position: 'Engineer at SK Hynix' },
-];
+
 
 const People = () => {
   return (
@@ -51,23 +47,23 @@ const People = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-3xl text-lg">{professor.bio}</p>
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-3xl text-lg">{professor.bio2}</p>
             <div className="flex flex-wrap gap-6 mb-6">
-              <a href={`mailto:${professor.email}`} className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-lg">
+              {/* <a href={`mailto:${professor.email}`} className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-lg">
                 <Mail className="w-5 h-5" />
                 {professor.email}
               </a>
               <a href={professor.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-lg">
                 <Globe className="w-5 h-5" />
                 Website
-              </a>
+              </a> */}
             </div>
             <div className="mb-4">
-              <h4 className="font-bold text-foreground mb-2 text-xl">Research Interests</h4>
+              {/* <h4 className="font-bold text-foreground mb-2 text-xl">Research Interests</h4> */}
               <div className="flex flex-wrap gap-3">
-                {professor.interests.map((interest) => (
+                {/* {professor.interests.map((interest) => (
                   <span key={interest} className="px-4 py-2 rounded-full bg-accent/10 text-accent text-base font-semibold">
                     {interest}
                   </span>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
@@ -86,13 +82,13 @@ const People = () => {
                 <span className="italic text-lg text-muted-foreground"> (2019–2024)</span>
               </div>
               <div className="font-medium text-lg">
-                National Yang Ming <span className="underline decoration-accent">Chiao Tung</span> University (NYCU), Taiwan
+                National Yang Ming <span className="">Chiao Tung</span> University (NYCU), Taiwan
               </div>
               <div className="mt-4 text-base">
-                <span>Advisor: Prof. <span className="underline decoration-accent">Bo-Cheng Lai</span></span>
+                <span>Advisor: Prof. <span className="">Bo-Cheng Lai</span></span>
               </div>
               <div className="text-base">
-                Dissertation: <span className="italic">Parallel and Distributed Near-Memory Computing Hardware – Software Co-Design for <span className="underline decoration-accent">Genomic</span> Big Data Analysis Pipelines</span> （基因組大數據分析管線之平行分散式近儲存運算硬體軟體協同設計）
+                Dissertation: <span className="italic">Parallel and Distributed Near-Memory Computing Hardware – Software Co-Design for <span className="">Genomic</span> Big Data Analysis Pipelines</span> （基因組大數據分析管線之平行分散式近儲存運算硬體軟體協同設計）
               </div>
               <div>
                 <span className="font-bold italic text-xl">M.S. in Electrical Engineering and Computer Science</span>
