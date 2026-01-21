@@ -22,23 +22,20 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/people" element={<People />} />
-          <Route path="/publications" element={<Publications />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/people" element={<People />} />
+        <Route path="/publications" element={<Publications />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </TooltipProvider>
   </QueryClientProvider>
 );
-
 export default App;
